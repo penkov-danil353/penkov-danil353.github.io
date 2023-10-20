@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/background.jpg");
+    background-color: whitesmoke;
+}
+
+.login-container {
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login-form {
+    margin-bottom: 0;
+}
+
+.login-form h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 65%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: block;
+    margin: auto;
+}
+
+.login-form button:hover {
+    background-color: darkblue;
+}
+
+.remember_me {
+    box-sizing: border-box;
+}

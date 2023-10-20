@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="compliment_styles.css">
+</head>
+<body>
+    <h1>Форма обратной связи</h1>
+    <form class="compliment-form" method="POST" action="https://httpbin.org/post" enctype="multipart/form-data">
+        <input type="hidden" name="user_id" value="123">
+        <div>
+            <label for="fio">ФИО</label>
+            <input type="text" id="fio" name="fioqwe" placeholder="Введите ФИО" value="fds" required>
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Введите почту" required>
+        </div>
+
+        <fieldset>
+            <legend>Как вы о нас узнали?</legend>
+            <div>
+                <input type="radio" name="source" id="friends" value="Друзья">
+                <label for="friends">Друзья</label>
+            </div>
+            <div>
+                <input type="radio" name="source" id="ad" value="Реклама" checked>
+                <label for="ad">Реклама</label>
+            </div>
+        </fieldset>
+
+        <div>
+            <label for="msg_type">Тип обращения</label>
+            <select name="msg_type" id="msg_type">
+                <option value="1">Похвала</option>
+                <option value="2">Предложение</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="msg">Сообщение</label>
+            <textarea name="" id="msg" cols="30" rows="10" placeholder="Я был очень рад, когда..."></textarea>
+        </div>
+
+        <div>
+            <label for="attachment">Вложение</label>
+            <input type="file" name="attachment" id="attachment">
+        </div>
+
+        <div>
+            <input type="checkbox" name="agree" id="agree" value="agree" required checked>
+            <label for="agree">Согласен с правилами</label>
+        </div>
+
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("images/background.jpg");
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form {
+    background-color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+div, fieldset {
+    margin-bottom: 20px;
+}
+
+.compliment-form input, .compliment-form select, .compliment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.compliment-form select {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    appearance: none;
+}
+
+.compliment-form button {
+    width: 65%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: block;
+    margin: auto;
+}
+
+.compliment-form button:hover {
+    background-color: darkblue;
+}
