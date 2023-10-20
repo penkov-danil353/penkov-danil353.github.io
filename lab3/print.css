@@ -1,0 +1,15 @@
+/* Скрываем шапку, подвал и всё их содержимое */
+header, header * , footer, footer * {
+    display: none;
+}
+
+/* Убираем фоновый цвет и тени */
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+#sidebar, #main-content {
+    background: #fff;
+    box-shadow: none;
+}
