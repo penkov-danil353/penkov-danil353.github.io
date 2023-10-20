@@ -2,214 +2,106 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Интернет-магазин</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Хэллоуин</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header class="header clearfix">
-        <div class="container">
-            <nav class="main-menu">
-                <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Каталог</a></li>
-                    <li><a href="#">Акции</a></li>
-                    <li><a href="#">Магазины</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="profile">
-                <a href="#">Вход</a>
-            </div>
-        </div>
 
+    <header class="flex-container">
+        <a href="index.html">
+            <img src="images/logo.png" alt="" height="35">
+            <div id="logo">Хэллоуин</div>
+        </a>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="diy.html">DIY Декор</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="container">
-        <aside class="sidebar">
-            <form action="">
-                <fieldset>
-                    <legend>Производители</legend>
-                    <div class="form-group">
-                        <input type="checkbox" name="manufacturer" id="manufacturer1">
-                        <label for="manufacturer">Производитель 1</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="checkbox" name="manufacturer" id="manufacturer2">
-                        <label for="manufacturer">Производитель 2</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="checkbox" name="manufacturer" id="manufacturer3">
-                        <label for="manufacturer">Производитель 3</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="checkbox" name="manufacturer" id="manufacturer4">
-                        <label for="manufacturer">Производитель 4</label>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Группы товаров</legend>
-                    <div class="form-group">
-                        <input type="radio" name="group" id="group1">
-                        <label for="group1">Группа 1</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="radio" name="group" id="group2">
-                        <label for="group2">Группа 2</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="radio" name="group" id="group3">
-                        <label for="group3">Группа 3</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="radio" name="group" id="group4">
-                        <label for="group4">Группа 4</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="radio" name="group" id="group5">
-                        <label for="group5">Группа 5</label>
-                    </div>
-                </fieldset>
-                <button class="btn" type="submit">Применить</button>
-            </form>
-        </aside>
-        <div class="page-content">
-            <h1 class="products-header">Товары для дома</h1>
-            <div class="products"> 
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/product1.jpg" alt="Чайник">
-                    </div>
-                    <div class="product-details">
-                        <header>Чайник</header>
-                        <p class="product-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe id doloribus ullam dolorem nemo sunt qui eos reprehenderit ipsum, consectetur provident minima non necessitatibus ut laudantium fugiat earum voluptatum molestias.</p>
-                        <button class="buy-btn">
-                            <span class="price">1000 &#8381;</span>
-                            <span class="buy">Заказать</span>
-                        </button>
-                    </div>
-                </div>
+    <main class="flex-container">
+    <div class="content-wrapper">
+        <section id="main-content">
+        <img src="./images/pumpkin.png" alt="Тыква" class="float-image">
+        <article>
+            <h2>История Хэллоуина</h2>
+            <p>Хэллоуин — праздник, который отмечается 31 октября. Его история началась более тысячи лет назад в Ирландии. 
+            Этот праздник изначально был связан с концом урожайного сезона и началом зимы. Со временем, традиции стали смешиваться, и праздник получил современный облик.
+            </p>
+            <p>
+                Праздник берет свое начало от древнекельтского праздника Самхэйн (Samhain), который отмечался на территории современной Ирландии, Великобритании и северной Франции. Самхэйн праздновался 31 октября, когда лето завершалось, и начиналась темная половина года. Этот день считался границей между мирами живых и мертвых. Кельты верили, что именно в этот день духи умерших возвращаются на Землю.
+            </p>
+            <p>
+                С распространением христианства эти языческие традиции начали смешиваться с христианскими. В 8 веке папа Григорий III установил 1 ноября днем празднования всех святых (Аллхеллоуин). Накануне этой даты, 31 октября, стали отмечать Аллхеллову ночь. Со временем название праздника превратилось в "Хэллоуин".
+            </p>
+            <p>
+                Многие современные традиции Хэллоуина происходят из древних обрядов. Например, костюмы и маски носились для того чтобы запутать злые духи или узнать будущее. Тыква со свечой внутри (jack-o'-lantern) восходит к ирландской легенде об ушлом человеке по имени Джек, который обманул дьявола и был проклят блуждать вечно с лампой в руке.
+            </p>
+            <p>
+                С приходом ирландских и шотландских иммигрантов в США в XIX веке Хэллоуин стал популярен и на новом континенте. Со временем он превратился в масштабное коммерческое мероприятие с костюмами, украшениями и сладостями.
+                Сегодня Хэллоуин отмечается во многих странах мира, и каждая страна привносит в него что-то свое, соединяя древние обычаи с современными традициями.
+                Таким образом, Хэллоуин — это не просто праздник ужасов и сладостей, это праздник, который объединяет историю, культуру и веру разных народов.
+            </p>
+        </article>
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/product2.jpg" alt="Стул">
-                    </div>
-                    <div class="product-details">
-                        <header>Стул</header>
-                        <p class="product-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe id doloribus ullam dolorem nemo sunt qui eos reprehenderit ipsum, consectetur provident minima non necessitatibus ut laudantium fugiat earum voluptatum molestias.</p>
-                        <button class="buy-btn">
-                            <span class="price">4000 &#8381;</span>
-                            <span class="buy">Заказать</span>
-                        </button>
-                    </div>
-                </div>
+        <article>
+            <h2>Как отметить</h2>
+            <ol>
+                <li>Для того чтобы качественно отметить Хэллоуин, необходим декор, костюмы и, конечно, хорошая компания. 
+                    Важным элементом является атмосфера, которую можно создать с помощью правильного освещения и музыки. 
+                </li>
+                <li>
+                    Проведите вечер, смотря классические фильмы ужасов или новинки жанра.
+                </li>
+                <li>
+                    Выберите крупную тыкву и вырежите на ней страшное лицо. Вставьте внутрь свечу и разместите на пороге дома или в окне.
+                </li>
+                <li>
+                    Попробуйте приготовить "кровавые" коктейли, печенье в форме привидений или любое другое блюдо, подходящее для Хэллоуина.
+                </li>
+                </ol>
+            </article>
+        </section>
+    </div>
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/product3.jpg" alt="Стол">
-                    </div>
-                    <div class="product-details">
-                        <header>ГазСтолета</header>
-                        <p class="product-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe id doloribus ullam dolorem nemo sunt qui eos reprehenderit ipsum, consectetur provident minima non necessitatibus ut laudantium fugiat earum voluptatum molestias.</p>
-                        <button class="buy-btn">
-                            <span class="price">2700 &#8381;</span>
-                            <span class="buy">Заказать</span>
-                        </button>
-                    </div>
-                </div>
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/product4.jpg" alt="Фикус">
-                    </div>
-                    <div class="product-details">
-                        <header>Фикус</header>
-                        <p class="product-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe id doloribus ullam dolorem nemo sunt qui eos reprehenderit ipsum, consectetur provident minima non necessitatibus ut laudantium fugiat earum voluptatum molestias.</p>
-                        <button class="buy-btn">
-                            <span class="price">1900 &#8381;</span>
-                            <span class="buy">Заказать</span>
-                        </button>
-                    </div>
-                </div>
+    <aside id="sidebar">
+        <section>
+            <h2>Легенды Хэллоуина</h2>
+            <ul>
+                <li>Джек-фонарик</li>
+                <li>Белая дама</li>
+                <li>Дерево ведьм</li>
+            </ul>
+        </section>
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/product5.jpg" alt="Чайный сервиз">
-                    </div>
-                    <div class="product-details">
-                        <header>Чайный сервиз</header>
-                        <p class="product-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe id doloribus ullam dolorem nemo sunt qui eos reprehenderit ipsum, consectetur provident minima non necessitatibus ut laudantium fugiat earum voluptatum molestias.</p>
-                        <button class="buy-btn">
-                            <span class="price">3000 &#8381;</span>
-                            <span class="buy">Заказать</span>
-                        </button>
-                    </div>
-                </div>
+        <section>
+            <h2>Символы Хэллоуина</h2>
+            <ul>
+                <li>Тыква с горящими глазами</li>
+                <li>Черные кошки</li>
+                <li>Костюмы призраков</li>
+            </ul>
+        </section>
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/product6.jpg" alt="Подсвечник">
-                    </div>
-                    <div class="product-details">
-                        <header>Подсвечник</header>
-                        <p class="product-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe id doloribus ullam dolorem nemo sunt qui eos reprehenderit ipsum, consectetur provident minima non necessitatibus ut laudantium fugiat earum voluptatum molestias.</p>
-                        <button class="buy-btn">
-                            <span class="price">1500 &#8381;</span>
-                            <span class="buy">Заказать</span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/product7.jpg" alt="Ваза">
-                    </div>
-                    <div class="product-details">
-                        <header>Ваза</header>
-                        <p class="product-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe id doloribus ullam dolorem nemo sunt qui eos reprehenderit ipsum, consectetur provident minima non necessitatibus ut laudantium fugiat earum voluptatum molestias.</p>
-                        <button class="buy-btn">
-                            <span class="price">1000 &#8381;</span>
-                            <span class="buy">Заказать</span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/product8.jpg" alt="Чайник">
-                    </div>
-                    <div class="product-details">
-                        <header>Сварочная панель</header>
-                        <p class="product-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe id doloribus ullam dolorem nemo sunt qui eos reprehenderit ipsum, consectetur provident minima non necessitatibus ut laudantium fugiat earum voluptatum molestias.</p>
-                        <button class="buy-btn">
-                            <span class="price">9000 &#8381;</span>
-                            <span class="buy">Заказать</span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/product9.jpg" alt="Букет">
-                    </div>
-                    <div class="product-details">
-                        <header>Букет</header>
-                        <p class="product-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe id doloribus ullam dolorem nemo sunt qui eos reprehenderit ipsum, consectetur provident minima non necessitatibus ut laudantium fugiat earum voluptatum molestias.</p>
-                        <button class="buy-btn">
-                            <span class="price">3000 &#8381;</span>
-                            <span class="buy">Заказать</span>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+        <section>
+                <h2>Блюда на Хэллоуин</h2>
+                <ul>
+                    <li>Тыквенный пирог</li>
+                    <li>Яблоки в карамели</li>
+                    <li>"Мозги" из желе</li>
+                </ul>
+        </section>
+    </aside>
+    
     </main>
 
-
-    <footer>
-
+    <footer class="flex-container">
+        <div id="footer-content">
+            <p>© 2023 Хэллоуин. Все права защищены.</p>
+        </div>
     </footer>
+
 </body>
 </html>
